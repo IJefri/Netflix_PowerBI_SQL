@@ -11,7 +11,7 @@ SELECT
 FROM
     Netflix;
 
--- Show top 5 movie countries on Netflix
+-- Show top 5 movie amount countries on Netflix
 
 SELECT
   type,
@@ -23,7 +23,7 @@ GROUP BY type, Country
 ORDER BY CountryCount DESC
 LIMIT 5;
 
--- Show top 5 tv-shows countries on Netflix
+-- Show top 5 tv-show amount countries on Netflix
 
 SELECT
   type,
@@ -46,7 +46,7 @@ FROM NETFLIX
 GROUP BY Country
 ORDER BY "TV Shows & Movies Count" DESC;
 
--- Display 
+-- Calculate Percentage of separate ratings divided by each Country
 
 SELECT
     Country,
